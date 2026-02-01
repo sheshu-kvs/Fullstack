@@ -1,5 +1,6 @@
 public class Day1Feb {
     static void removeSpecialCharacter(String str){
+        String replace = str.replaceAll("\\s+ ","");
         String t="";
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
@@ -8,9 +9,10 @@ public class Day1Feb {
             }
         }
         System.out.println(t);
+        System.out.println(replace);
     }
     public static void main(String[] args) {
-        FindDuplicates("heleo!2#$");
+       removeSpecialCharacter("hel   eo  !2#$");
     }
     
 }
