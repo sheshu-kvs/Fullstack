@@ -25,8 +25,35 @@ public class Day3Feb {
            
         }
 
+
+
+    static void ReverseTitleCaseLastToFirst(){
+        String[] str={"maruti","deva","jeeva"}; 
+        StringBuilder sb =new StringBuilder();
+          
+            String lower="";
+        for (String  words : str) {
+               String first="";
+            for(int i=0;i<words.length();i++){
+            //   System.out.println(words.charAt(i)+" : "+i);
+              if(i==0){
+                
+              }
+              else if(i==words.length()-1){
+                sb.append(words.charAt(i)+" ");
+              }
+              else{
+                sb.append(words.charAt(i));
+              }
+            }      
+         }
+         System.out.println(sb); 
+           
+        }
+    
     public static void main(String[] args){
         printTitleCase();
+        ReverseTitleCaseLastToFirst();
 
     }    
 }
